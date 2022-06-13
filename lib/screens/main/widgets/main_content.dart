@@ -12,7 +12,7 @@ class MainContent extends StatelessWidget {
     return ListView.separated(
       itemBuilder: (context, index) => InkWell(
         onTap: () {
-          Navigator.of(context).pushReplacementNamed(Routes.details.route,
+          Navigator.of(context).pushNamed(Routes.details.route,
               arguments: houses[index]);
         },
         child: Card(
