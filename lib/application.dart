@@ -1,4 +1,5 @@
 import 'package:codingchallenge_redandroid/repositories/house_repository.dart';
+import 'package:codingchallenge_redandroid/screens/details/details_screen.dart';
 import 'package:codingchallenge_redandroid/screens/main/main_screen.dart';
 import 'package:codingchallenge_redandroid/screens/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,7 @@ class Application extends StatelessWidget {
           routes: {
             Routes.splash.route: (_) => const SplashScreen(),
             Routes.main.route: (_) => const MainScreen(),
-            Routes.details.route: (_) => Container(),
+            Routes.details.route: (_) => const DetailsScreen(),
           }
       ),
     );
