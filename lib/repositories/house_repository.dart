@@ -8,7 +8,7 @@ class HouseRepository {
 
   HouseRepository({this.service});
 
-  Future<void> load() async {
+  load() async {
     service ?? (throw Exception("Service is not initialized"));
     _houses.clear();
     final houseList = await service!.getHouses();
