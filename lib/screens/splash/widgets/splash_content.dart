@@ -19,6 +19,7 @@ class SplashContent extends StatelessWidget {
         color: Theme.of(context).colorScheme.secondary,
         child: Center(
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
               Image.asset("assets/images/iron_throne.png"),
               const SizedBox(
